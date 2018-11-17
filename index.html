@@ -4,51 +4,80 @@
   <link href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Amaranth|Londrina+Shadow" rel="stylesheet">
   <style>
+  img {
 
-    body {
+   margin-top: 0px;
+   margin-left: 40px
+}
+     header {
       text-align: center;
-      background: url("https://i.imgur.com/4hw9XKq.jpg?1");
-      background-size: cover;
-      background-position: center;
-      color: black;
-      font-family: 'Amaranth', sans-serif;
-      max-width: 600px;
-      margin: 0 auto;
+      background: url('https://i.imgur.com/4hw9XKq.jpg?1');
+      background-size: auto;
+      color: #000;
+      height:300px
+      }
+    ul {
+      padding: 10px;
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+      font-size: 20px;
     }
     p {
-      font-size: 25px;
-      width=600px;
-      color:rgba(0,50,0);
-
-      background: -webkit-radial-gradient(center,rgba(255,180,180,0.85),rgba(255,255,255,0.1)   )
-    }
-
-  ul{margin: 40px 0 0 0;}
-  li{display:inline;
-  padding: 0 10px;
-  font-size: 20px}
-
-
-
-  .MyPic{border: 10px solid black;
-    border-radius: 12px;
-    margin: 30px 80px 0 80px;
+      font-size: 15px;
       }
+    h1 {font-size:55px;
+
+    font-family: 'Londrina Shadow', cursive;}
+    h2 {font-size:30px;}
+    article {
+      max-width:800px;
+      padding: 10px;
+      background: white;
+      margin: 0 auto;
+    background: rgba(225, 244, 254, 1);}
+    body{
+    background: rgba(225, 244, 254, 1);};
+  @media(max-width: 500px){
+    h1{font-size:36px;}
+    li{display:block;
+        padding:5px;}
+    body{background:red;}
+     }
 
   </style>
-
-
 </head>
 <body>
-  <img  class="MyPic" src="https://i.imgur.com/DpSZAy7.jpg?2" width=300>
 
-  <p>Hi! I'm Monika, experienced data scientist, <span class="stats">statistician</span> and R programmer</p>
-
+  <header>
+    <img src="https://i.imgur.com/PnOIiTx.jpg?21" align=left vertical-align:middle height=120%  >
+    <h1>Monika Novackova</h1>
+    <h2>Welcome to my webpage</h2>
     <ul>
-      <li><a href="https://sites.google.com/site/monikanovackova71/home" target="_blank"> <b>Home</b>  </a></li>
+      <li><a href="#"> <b>Home</b>  </a></li>
       <li><a href="https://drive.google.com/file/d/0BzsVF-i98eGBZ1NRaVFoT2FIOHc/view" target="_blank"> <b>CV</b> </a></li>
-      <li><a href="https://dash.generalassemb.ly/Monika23/build-your-own-blog-theme" target="_blank"> <b>Programming</b> </a></li>
-        <li><a href="https://dash.generalassemb.ly/Monika23/build-your-own-business-website"> <b>Research</b> </a></li>
-      <li><a href="https://sites.google.com/site/monikanovackova71/teaching" target="_blank"> <b>Teaching</b></a></li>
+      <li><a href="https://dash.generalassemb.ly/Monika23/build-your-own-personal-website#" target="_blank"> <b> Programming</b> </a></li>
+        <li><a href="#"> <b>Research</b> </a></li>
+      <li><a href="#"> <b>Teaching</b></a></li>
     </ul>
+
+    </header>
+
+  <article>
+  <p>Experienced data scientist, statistician and R programmer with a demonstrated history of working in the higher education industry. My main professional interest include data analysis, statistics, econometric modelling and machine learning. I am also interested in Climate Change Economics and Sustainability. In addition I enjoy coding in R and Python. I am relatively new to Python but I am very enthusiastic about getting professional and I am trying to work on my personal project in Python every day.</p>
+</article>
+<article>
+  In the present, I work as a Research Fellow in Sustainability at the <a href ="http://www.sussex.ac.uk/geography/" target="_blank"> department of Geography</a>, <a href="https://www.sussex.ac.uk/"target="_blank">University of Sussex</a>. My current research is focused on estimating of effects of droughts in sub-Saharan Africa using economic and econometrics methods. My work will contribute to <a href="http://www.sussex.ac.uk/ssrp/" target="_blank"> the Sussex Sustainability Research Programme</a>.
+</article>
+
+<article>
+<h3>Contact details</h3>
+
+monika.novac@gmail.com
+</br>
+M.Novackova@sussex.ac.uk
+</br>
+<a href="www.linkedin.com/in/monika-novackova" target="_blank">Linkedin</a>
+</article>
 </body>
