@@ -22,19 +22,19 @@
 
     ul {
       padding: 10px;
-      color:black;
     }
     li {
       display: inline;
       padding: 0px 10px 0px 10px;
       font-size: 20px;
-      color: black;
+
+
     }
+        a{color:darkblue;}
     p {
       font-size: 15px;
       }
     h1 {font-size:52px;
-        font-family: 'Archivo', sans-serif;
         padding-top:25px;}
 
 
@@ -61,7 +61,8 @@
        margin-left: 40px;
        vertical-align: middle;
          }
-
+.jumbotron{font-size: 20px;
+           background: rgba(225, 244, 254, 1);}
 
   </style>
 </head>
@@ -69,7 +70,7 @@
 
   <header>
 
-      <img  class="MyPic" src="https://i.imgur.com/DpSZAy7.jpg?2" align=left width=300>
+      <img  class="MyPic" class='img-responsive' src="https://i.imgur.com/DpSZAy7.jpg?2" align=left width=300>
 
     <h1>Monika Novackova</h1>
     <h2>Welcome to my webpage</h2>
@@ -87,16 +88,32 @@
   <p>Experienced data scientist, statistician and R programmer with a demonstrated history of working in the higher education industry. My main professional interest include data analysis, machine learning, statistics and econometric modelling. I am also interested in Climate Change Economics and Sustainability. In addition, I enjoy coding in R, Python and web-design.</p>
 </article>
 <article>
-  In the present, I work as a Research Fellow in Sustainability at the <a href ="http://www.sussex.ac.uk/geography/" target="_blank"> department of Geography</a>, <a href="https://www.sussex.ac.uk/"target="_blank">University of Sussex</a>. My current research is focused on estimating of effects of droughts in sub-Saharan Africa using economic and econometrics methods. My work will contribute to <a href="http://www.sussex.ac.uk/ssrp/" target="_blank"> the Sussex Sustainability Research Programme</a>.
+  <p>In the present, I work as a Research Fellow in Sustainability at the <a href ="http://www.sussex.ac.uk/geography/" target="_blank"> department of Geography</a>, <a href="https://www.sussex.ac.uk/"target="_blank">University of Sussex</a>. My current research is focused on estimating of effects of droughts in sub-Saharan Africa using economic and econometrics methods. My work will contribute to <a href="http://www.sussex.ac.uk/ssrp/" target="_blank"> the Sussex Sustainability Research Programme</a>.</p>
 </article>
 
 <article>
-<h3>Contact details</h3>
 
-monika.novac@gmail.com
-</br>
-M.Novackova@sussex.ac.uk
-</br>
-<a href="www.linkedin.com/in/monika-novackova" target="_blank">Linkedin</a>
+<div class='jumbotron'>
+      <div class='container'>
+            <div class='row'>
+                  <div class='col-sm-12'>
+                    <h3>Contact details:</h3>
+                  </div>
+            </div>
+
+            <div class='row'>
+                <div class='col-sm-4'>
+                      monika.novac@gmail.com    </br>   M.Novackova@sussex.ac.uk
+                </div>
+
+                <div class='col-sm-4'>
+                    <button class="btn btn-lg btn-linkedin"><a href="https://www.linkedin.com/in/monika-novackova" target="_blank">LinkedIn</a></button>
+                </div>
+                <div class='col-sm-4'>
+                  <button class='btn btn-lg btn-facebook'><a href="https://www.facebook.com/monika.novac?ref=br_rs" target="_blank">Facebook</a></button>
+                </div>
+            </div>
+      </div>
+</div>
 </article>
 </body>
