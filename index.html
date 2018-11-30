@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device=device-width,initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
   <link href=main.css rel="stylesheet">
+  <script src="js/jquery-3.3.1.min.js"></script>
   <style>
 
      header {
@@ -69,6 +70,9 @@
 .jumbotron{font-size: 20px;
            background: rgba(225, 244, 254, 1);}
 
+.ButtonClicked {background-color:red;
+  color:red;
+           }
   </style>
 </head>
 <body>
@@ -136,7 +140,21 @@
                   <button class='btn btn-lg btn-facebook'><a id='fb' href="https://www.facebook.com/monika.novac?ref=br_rs" target="_blank">Facebook</a></button>
                 </div>
             </div>
+
+            <div class='row'>
+
+                <div  class='col-sm-2'>
+                  <button id='fun' class="btn btn-lg btn-linkedin">this is fun</button>
+                </div>
+            </div>
       </div>
 </div>
 </article>
+
+
+<script>
+  $('#fun').on('click',function() {
+  $(this).toggleClass('ButtonClicked');
+  });
+</script>
 </body>
