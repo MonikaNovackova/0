@@ -48,11 +48,11 @@ article {
   padding: 10px;
   background: white;
   margin: 0 auto;
-  background: rgba(225, 244, 254, 1);
+  background: rgba(250, 280, 245, 1);
 }
 
 body {
-  background: rgba(225, 244, 254, 1);
+  background: rgba(250, 280, 245, 1);
 }
 
 @media(max-width: 500px){
@@ -77,10 +77,6 @@ body {
   float:left;
 }
 
-.jumbotron {
-  font-size: 20px;
-  background: rgba(225, 244, 254, 1);
-}
 
 .ButtonClicked {
   background-color:red;

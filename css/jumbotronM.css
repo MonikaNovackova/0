@@ -9,6 +9,12 @@
 }
 
 
+.jumbotron {
+  font-size: 20px;
+  background: rgba(250, 280, 245, 1);
+}
+
+
 blockquote {
   border-left: 0;
 }
