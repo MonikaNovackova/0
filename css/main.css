@@ -70,39 +70,64 @@ body {
 }
 
 
-@media (max-width: 500px) {
-div {
-	display:flex;
-	width:80%;
-	margin:auto;
-  flex-wrap: wrap;
-  background: none;
-}
+@media(max-width:600px) and (min-width:450px) {
 
-
-h1 {
-  font-size:36px;
-}
   h2 {
+      opacity: 0;
+      font-size: 5px;
+      margin:0;
+    }
+
+  h1 {
+      font-size: 36px;
+      margin:0;
+    }
+    h4 {
+        font-size: 12px;
+        margin:0;
+      }
+
+ul {
     font-size: 20px;
-    margin: 20px 0 30px 0;
+    margin:0;
   }
 
-  small {
-    font-size: 16px;
-  }
+li  a {
+      color: white;
+    }
 }
+@media(max-width:450px) {
+  header {
+    margin-bottom: 25px;
+  }
+  a {
+  color: green;
+  }
+  h2 {
+      opacity: 0;
+      font-size: 5px;
+      margin:0;
+    }
+    h3 {
+        opacity: 0;
+        font-size: 5px;
+        margin:0;
+      }
+
+  h1 {
+      font-size: 16px;
+      margin:0;
+    }
+    h4 {
+        font-size: 12px;
+        margin:0;
+      }
+  }
 
 .ButtonClicked {
   background-color:red;
   color:red;
 }
 
-.SLR{
-    @media(max-width:1000px) {
-      height: 50px !important;
-  position: absolute;
-  background: white;
-  background-size: cover;
-  }
+
 }

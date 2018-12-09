@@ -110,30 +110,3 @@ background-color:rgb(0,61,46);
 .date {color:yellow;
 float:right;
 }
-
-
-
-@media(max-width:600px) {
-  header {
-
-}
-  h2 {
-      opacity: 0;
-      font-size: 5px;
-      margin:0;
-    }
-
-  h1 {
-      font-size: 36px;
-      margin:0;
-    }
-
-ul {
-    font-size: 20px;
-    margin:0;
-  }
-
-  a {
-      color: white;
-    }
-}
