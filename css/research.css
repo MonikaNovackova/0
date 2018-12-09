@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<head>
-<script src="/assets/jquery.js"></script>
-
+  /*<script src="/assets/jquery.js"></script> */
 body {
   font-family: helvetica, sans-serif;
   margin: 0 auto;
-  max-width: 00px;
-  background: #232323;
 }
 
 h4 {
