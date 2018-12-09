@@ -3,9 +3,23 @@ body {
   margin: 0 auto;
 }
 
-h4 {
-  text-align: center;
+
+h3 {
+  text-align: left;
   color: black;
-  margin: 20px 0 0px 0;
-  font-size:25px
+  margin: 0 0 40px 0;
+  font-size:27px
+}
+
+h4 {
+  text-align: left;
+  color: black;
+  margin: 0 0 -5px 0;
+  font-size:20px;
+}
+
+
+p {
+  color: black;
+  margin: 0 0 40px 0;
 }
