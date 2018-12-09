@@ -99,7 +99,7 @@ li  a {
 }
 @media(max-width:450px) {
   header {
-    margin-bottom: 85px;
+  margin-bottom: 85px;
   line-height:  30px;
   }
   a {
@@ -117,7 +117,7 @@ li  a {
       }
 
   h1 {
-      font-size: 16px;
+      font-size: 22px;
       margin:0;
     }
     h4 {
