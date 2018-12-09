@@ -2,12 +2,9 @@ header {
   padding: 0 0 0  0;
   text-align: center;
 
-
-
-background-image: url('https://i.imgur.com/4hw9XKq.jpg?1');
-
-background-image: url('https://i.imgur.com/TxPVaYw.jpg');
-background-image: url('https://i.imgur.com/Yqas5Hn.jpg?1');
+  background-image: url('https://i.imgur.com/4hw9XKq.jpg?1');
+  background-image: url('https://i.imgur.com/TxPVaYw.jpg');
+  background-image: url('https://i.imgur.com/Yqas5Hn.jpg?1');
   color: #000;
   height: 300px;
   background-size: cover;
@@ -29,7 +26,7 @@ a {
 
 p {
   font-size: 15px;
-  padding-top:30px
+  padding-top:30px;
 }
 
 h1 {
