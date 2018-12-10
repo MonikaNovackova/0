@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130304378-1"></script>
@@ -18,7 +19,9 @@
   <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/jumbotronM.css" rel="stylesheet">
+  <link href="css/programming.css" rel="stylesheet">
   <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -38,7 +41,7 @@
               <li><a href="https://drive.google.com/file/d/0BzsVF-i98eGBZ1NRaVFoT2FIOHc/view" target="_blank"> <b>CV.pdf</b> </a></li>
               <li><a href="research.html"> <b>Research</b> </a></li>
               <li><a href="teaching.html"> <b>Teaching</b></a></li>
-              <li><a href="programming.html" ><b> Programming</b> </a></li>
+              <li><a href="programming.html"><b>Programming</b> </a></li>
             </ul>
         </div>
         <div class="sol-sm-2">
@@ -66,11 +69,51 @@
 
 
 <article >
-  <p>Experienced data scientist, statistician and R programmer with a demonstrated history of working in the higher education industry. My main professional interest include data analysis, machine learning, statistics and econometric modelling. I am also interested in Climate Change Economics and Sustainability. In addition, I enjoy coding in R, Python and web-design.</p>
+  <p>Learning new programming languages is my big passion. I am particularly interested in Python, SQL and Web-development using HTML, CSS and JavaScript. I also enjoy learning new skills in R statistical software which is my main programming language.
+  </p>
 </article>
 <article>
-  <p>In the present, I work as a Research Fellow in Sustainability at the <a href ="http://www.sussex.ac.uk/geography/" target="_blank"> department of Geography</a>, <a href="https://www.sussex.ac.uk/"target="_blank">University of Sussex</a>. My current research is focused on estimating of effects of droughts in sub-Saharan Africa using economic and econometrics methods. My work will contribute to <a href="http://www.sussex.ac.uk/ssrp/" target="_blank"> the Sussex Sustainability Research Programme</a>.</p>
+  <p>The purpose of this site is to link it and test my new programming projects and experiments. <span class="orrange">These projects are currently under development!</span></a></p>
 </article>
+
+<article>
+
+  <ul id="foob">
+        <li><a href="https://dash.generalassemb.ly/Monika23/build-your-own-personal-website#" target="_blank"><b> A bit more interesting version of my personal site</b> </a></li>
+        <li>A funny interactive thing:</li>
+            <input id="input" type="text">
+            <button id="button">Add</button>
+            <ul id="list">
+              <li>Example</li>
+            </ul>
+        <li>Another funny interactive thing: try what happen</li>
+            <input id="input2" type="text">
+            <button id="button2">Add</button>
+            <ul id="list2">
+              <li>Example</li>
+            </ul>
+</div>
+</div>
+</ul>
+</article>
+
+
+<script>
+  $("#button").click(function(event) {
+    var text = $("#input").val();
+    $("#list").append('<li>' + text + '</li>');
+  });
+</script>
+
+<script>
+  $("#button2").click(function(event) {
+    var text = $("#input2").val();
+    $("#list2").append('<li>' + text + '</li>'+ text + '</li>'+ text + 'hello');
+  });
+</script>
+
+
+
 
 <article>
   <div class='jumbotron'>
@@ -97,6 +140,7 @@
         </div>
   </div>
 </article>
+
 
 <script src="js/socialM.js"></script>
 </body>
