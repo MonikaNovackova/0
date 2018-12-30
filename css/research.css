@@ -1,10 +1,16 @@
 .fullV {color:yellow;
   font-style: italic;
+  display:block;
+  text-align: left;
   }
 
-  .fullV a {
-    color:lightGreen;
-    }
+.fullV a {
+  color:lightGreen;
+  }
+
+.fullV small p {
+  text-align:left;
+  }
 
 body {
   font-family: helvetica, sans-serif;
@@ -38,7 +44,7 @@ p {
   background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
   background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
   background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  padding: 10px;
+  padding: 10px 10px 60px 10px;
   line-height: 23px;
   text-align: justify;
   position: absolute;
@@ -65,17 +71,22 @@ a {
   margin: 0 auto;
 }
 
+.Land p {
+  padding: 10px;
+}
+
 .show-description.Land p {
-  height: 200px;
+  height: 215px;
 }
 
 .show-description.SLR p {
-  height: 330px;
+  height: 368px;
 }
 
 .show-description p {
-  height: 290px;
+  height: 285px;
   background: rgb(0,61,46);
+  padding:30px;
 }
 
 .show-description small {
