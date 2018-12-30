@@ -67,7 +67,10 @@ a {
 
 .show-description.Land p {
   height: 200px;
-  background: rgb(0,61,46);
+}
+
+.show-description.SLR p {
+  height: 330px;
 }
 
 .show-description p {
