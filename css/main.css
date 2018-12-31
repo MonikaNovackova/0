@@ -8,7 +8,7 @@ header {
   color: #000;
   height: 300px;
   background-size: cover;
-  margin-bottom: 85px;
+  margin-bottom: 55px;
   line-height: 30px;
 }
 
@@ -72,7 +72,11 @@ body {
 
 }
 
-@media(max-width:1000px) {
+@media(max-width:800px)and (min-width:600px) {
+  header {
+  margin-bottom: 170px;
+  line-height:  30px;
+  }
 h1 {
     color:red;
 }
@@ -82,36 +86,13 @@ h1 {
       margin:0;
     }}
 
-@media(max-width:600px) and (min-width:550px) {
 
-
-
-  h1 {
-      font-size: 36px;
-      margin:0;
-    }
-    h4 {
-        font-size: 12px;
-        margin:0;
-      }
-
-ul {
-    font-size: 20px;
-    margin:0;
-  }
-
-li  a {
-      color: green;
-    }
-}
-@media(max-width:550px) {
+@media(max-width:600px) {
   header {
-  margin-bottom: 85px;
+  margin-bottom: 120px;
   line-height:  30px;
   }
-  a {
-  color: green;
-  }
+
   h2 {
       opacity: 0;
       font-size: 5px;
@@ -132,7 +113,12 @@ li  a {
         margin:0;
         opacity:0;
       }
+ul {
+    font-size: 20px;
+    margin:0;
   }
+
+}
 
 .ButtonClicked {
   background-color:red;
