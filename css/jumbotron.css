@@ -30,8 +30,10 @@ blockquote {
 
 
 .navbar-inverse {
-  background-color: rgba(32, 35, 41,0.8);
+  background-color: rgba(32, 35, 41,0.8)
 }
+
+
 
 .form-inline input[name='email'] {
   width: 80%;
