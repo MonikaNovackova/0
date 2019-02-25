@@ -28,7 +28,7 @@ blockquote {
   background-color: rgba(32, 35, 41,0.8);
 }
 
-.navbar{height: 9%}
+/*navbar{height: 9%}*/  /*for positioning of the picture*/
 
 .form-inline input[name='email'] {
   width: 80%;
