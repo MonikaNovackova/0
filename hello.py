@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, url_for
 
 app=Flask("MyApp")
 
@@ -21,7 +21,18 @@ def sign_up():
     print form_data["email"]
     return "All ok. Your email is:"+ form_data["email"]
 
+@app.route("/signup3", methods=["POST"])
+def returnhome2():
+    form_data=request.form
+    v_email=form_data["email"]
+    return v_email
 
+
+print("test")
+
+@app.route('/index')
+@app.route('/')
+def index():
+    return 'you are in the index page'
 
 app.run(debug=True)
-print("test")

@@ -15,6 +15,13 @@
   <link href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" rel="stylesheet">
   <link href="../css/bootstrap.css" rel="stylesheet">
 
+
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.css') }}">   
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}"> 
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/jumbotronM.css') }}">   
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/programming.css') }}">   
+
+
   <meta name="viewport" content="width=device=device-width,initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
   <link href="../css/main.css" rel="stylesheet">
@@ -42,6 +49,7 @@
               <li><a href="https://drive.google.com/file/d/0BzsVF-i98eGBZ1NRaVFoT2FIOHc/view" target="_blank"> <b>CV.pdf</b> </a></li>
               <li><a href="research.html"> <b>Research</b> </a></li>
               <li><a href="teaching.html"> <b>Teaching</b></a></li>
+              <li><a href="{{ url_for('index') }}">Index</a></li>
               <li><a href="programming.html"><b>Programming</b> </a></li>
             </ul>
         </div>
@@ -90,7 +98,7 @@
               <li>Example</li>
             </ul>
 
-
+            <li>your email address is {{v_email}}</li>
   <div id="contact-form">
     <form method="post" action="http://127.0.0.1:5000/signup">
       <label for=email>Email address</label>
@@ -122,6 +130,17 @@
         <input type="submit"  value="Submit" id="submit-buttom">
       </form>
     </div>
+
+    <div id="contact-form">
+      <form method="post" action="signup3">
+        <label for=email>and..Yes..once again, your email please...</label>
+        <input type ="email" id="email" name="email" require="required">
+      </form>
+      <form method="post" action="programming.html">
+        <input type="submit"  value="Submit" id="submit-buttom">
+      </form>
+    </div>
+
 
 </div>
 </div>
