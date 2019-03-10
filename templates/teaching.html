@@ -12,15 +12,9 @@
 
   <title>Monika Novackova</title>
   <link href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" rel="stylesheet">
-  <link href="../css/bootstrap.css" rel="stylesheet">
-
   <meta name="viewport" content="width=device=device-width,initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
-  <link href="../css/main.css" rel="stylesheet">
-  <link href="../css/jumbotronM.css" rel="stylesheet">
-  <link href="../css/teaching.css" rel="stylesheet">
-  <script src="../js/jquery-3.3.1.min.js"></script>
-
+  <script src="{{ url_for('static',filename='js/jquery-3.3.1.min.js') }}"></script>
 
   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.css') }}">   
   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}"> 
@@ -46,7 +40,7 @@
             <h2>Welcome to my webpage</h2>
             <ul>
               <li><a href="/index"> <b>Home</b>  </a></li>
-              <li><a href="/https://drive.google.com/file/d/0BzsVF-i98eGBZ1NRaVFoT2FIOHc/view" target="_blank"> <b>CV.pdf</b> </a></li>
+              <li><a href="https://drive.google.com/file/d/0BzsVF-i98eGBZ1NRaVFoT2FIOHc/view" target="_blank"> <b>CV.pdf</b> </a></li>
               <li><a href="/research"> <b>Research</b> </a></li>
               <li><a href="/teaching"> <b>Teaching</b></a></li>
               <li><a href="/programming"><b> Programming</b> </a></li>
@@ -114,6 +108,7 @@ I have achieved the status of Associate Fellow of The Higher Education Academy. 
   </div>
 </article>
 
-<script src="../js/socialM.js"></script>
+<script src="{{ url_for('static',filename='js/socialM.js') }}"></script>
+
 
 </body>

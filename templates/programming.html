@@ -100,7 +100,7 @@
   
   <div id="contact-form">
     <form method="post" action="/signup">
-      <label for=email>Email address</label>
+      <label for=email>Lats stay in touch. What is your email address?</label>
       <input type ="email" id="email" name="email" require="required">
       <input type="submit"  value="Submit" id="submit-buttom">
     </form>
@@ -110,7 +110,7 @@
 
     <div id="contact-form">
       <form method="POST" action="/signup2">
-        <label for=email>Email address. please submit it once more THIS ONE.</label>
+        <label for=email> please submit you email once more</label>
         <input type ="email" id="email" name="email" require="required">
         <input type="submit"  value="Submit" id="submit-buttom">
       </form>
@@ -171,6 +171,7 @@
 </article>
 
 
-<script src="../js/socialM.js"></script>
+<script src="{{ url_for('static',filename='js/socialM.js') }}"></script>
+
 
 </body>

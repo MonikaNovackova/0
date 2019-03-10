@@ -19,14 +19,10 @@
   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/jumbotronM.css') }}">   
   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/research.css') }}">   
 
-
-  <script src="/assets/jquery.js"></script>
-
   <meta name="viewport" content="width=device=device-width,initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
+  <script src="{{ url_for('static',filename='js/jquery-3.3.1.min.js') }}"></script>
 
-
-  <script src="../js/jquery-3.3.1.min.js"></script>
 
 </head>
 
@@ -126,7 +122,8 @@
   </div>
 </article>
 
-<script src="../js/socialM.js"></script>
+<script src="{{ url_for('static',filename='js/socialM.js') }}"></script>
+
 
 
 
