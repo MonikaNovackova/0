@@ -6,12 +6,21 @@ app=Flask("MyApp")
 def helloW():
     return "Hello world"
 
-@app.route("/signup2", methods=["POST"])
-def returnhome():
-    form_data=request.form
-    v_email=form_data["email"]
+@app.route("/research")
+def get_research_page():
+    return render_template("research.html")
 
-    return render_template("tonka.html",v_email=v_email)
+@app.route("/index")
+def get_main_page():
+    return render_template("index.html")
+
+@app.route("/teaching")
+def get_teaching_page():
+    return render_template("teaching.html")
+
+@app.route("/programming")
+def get_programming_page():
+    return render_template("programming.html")
 
 
 
@@ -21,11 +30,15 @@ def sign_up():
     print form_data["email"]
     return "All ok. Your email is:"+ form_data["email"]
 
-@app.route("/signup3", methods=["POST"])
-def returnhome2():
+
+
+
+@app.route("/signup2", methods=["POST"])
+def returnhome():
     form_data=request.form
     v_email=form_data["email"]
-    return v_email
+    return render_template("programming.html",v_email=v_email)
+
 
 
 print("test")
