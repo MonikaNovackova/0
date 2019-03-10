@@ -17,6 +17,10 @@ def sign_up():
     print form_data["email"]
     return "All ok. Your email is:"+ form_data["email"]
 
+@app.route("/signup2")
+def returnhome():
+    return render_template("index.html")
+
 
 app.run(debug=True)
 print("test")
