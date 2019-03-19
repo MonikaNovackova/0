@@ -1,6 +1,19 @@
 from flask import Flask, render_template, request, url_for
+import requests
+
 
 app=Flask("MyApp")
+
+def send_simple_message(sendTo_mail,sendTo_name):
+    return requests.post(
+        "https://api.mailgun.net/v3/sandboxf144e75fa05a4582bd674ba3d4b9552e.mailgun.org/messages",
+        auth=("api","a9e3e2e98ea33f459e6a616f62ea179b-acb0b40c-6f225c23"),
+        data={"from": "Very excited User Monika monika.novac@gmail.com",
+        "to": [sendTo_mail,sendTo_name],
+        "subject":"Hello "+sendTo_name,
+        "text":sendTo_name+", this one is from Monika"}
+    )
+
 
 @app.route("/")
 def helloW():
@@ -24,7 +37,7 @@ def get_programming_page():
 
 
 
-@app.route("/signup", methods=["POST"])
+@app.route("/signup2", methods=["POST"])
 def sign_up():
     form_data=request.form
     print form_data["email"]
@@ -32,20 +45,13 @@ def sign_up():
 
 
 
-
-@app.route("/signup2", methods=["POST"])
+@app.route("/signup", methods=["POST"])
 def returnhome():
     form_data=request.form
     v_email=form_data["email"]
+    send_simple_message(sendTo_mail=form_data["email"],sendTo_name=form_data["name"])
     return render_template("programming.html",v_email=v_email)
 
 
-
-print("test")
-
-@app.route('/index')
-@app.route('/')
-def index():
-    return 'you are in the index page'
 
 app.run(debug=True)

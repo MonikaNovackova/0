@@ -99,25 +99,29 @@
  
   
   <div id="contact-form">
-    <form method="post" action="/signup">
+    <form method="post" action="/signup2">
       <label for=email>Lats stay in touch. What is your email address?</label>
       <input type ="email" id="email" name="email" require="required">
       <input type="submit"  value="Submit" id="submit-buttom">
     </form>
   </div>
 
-
-
-    <div id="contact-form">
-      <form method="POST" action="/signup2">
-        <label for=email> please submit you email once more</label>
-        <input type ="email" id="email" name="email" require="required">
-        <input type="submit"  value="Submit" id="submit-buttom">
+  <p>Let's keep in touch </p>
+  <div id="contact-form">
+      <form method="post" action="/signup">
+        <label for=email> please submit you email once more. And your name as well</label>
+              <label for="email">Email address:</label>
+              <input type="email" id="email" name="email" required="required">
+              <label for="name">Your name please </label>
+              <input type="name" id="name" name="name" required="required">
+              <input type="submit" value="Submit" id="submit-  button">
       </form>
-    </div>
+  </div>
+
+
 
         {% if v_email %}
-          <p><b>your email is {{v_email}}</b></p>
+          <p><b>Email was sent to you email address: {{v_email}}</b></p>
         {% else %}
           <p><b>what is your email??? answer above</b></p>
         {% endif %}
