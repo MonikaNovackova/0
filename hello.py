@@ -11,8 +11,9 @@ def send_simple_message(sendTo_mail,sendTo_name):
         data={"from": "Very excited User Monika monika.novac@gmail.com",
         "to": [sendTo_mail,sendTo_name],
         "subject":"Hello "+sendTo_name,
-        "text":sendTo_name+", this one is from Monika"}
-    )
+ 
+        "html":'<b>hello there.</b>  ' + ' <h1>Monika Novackova</h1>'
+        })
 
 
 @app.route("/")
