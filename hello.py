@@ -16,9 +16,6 @@ def send_simple_message(sendTo_mail,sendTo_name):
         })
 
 
-@app.route("/")
-def helloW():
-    return "Hello world"
 
 @app.route("/research")
 def get_research_page():
@@ -41,7 +38,7 @@ def get_programming_page():
 @app.route("/signup2", methods=["POST"])
 def sign_up():
     form_data=request.form
-    print form_data["email"]
+    print (form_data["email"])
     return "All ok. Your email is:"+ form_data["email"]
 
 
